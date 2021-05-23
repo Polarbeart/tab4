@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="30dp"
+    android:elevation="12dp"
+    app:cardPreventCornerOverlap="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_wall_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="To:"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_wall_name"
+            android:layout_width="wrap_content"
+            android:text="你的意中人"
+            android:layout_toRightOf="@id/tv_wall_to"
+            android:layout_alignBottom="@id/tv_wall_to"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_wall_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_wall_name"
+            android:layout_alignLeft="@+id/tv_wall_to"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="30dp"
+            android:text="这是一段你最为深情的告白。他静悄悄的走过
+            他轻悄悄的来过，只是最后的承诺，还是没有带走了寂寞"
+            android:layout_toRightOf="@id/tv_wall_to" />
+        <TextView
+            android:id="@+id/tem_wall_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:text="2021.5.21 || 21:23"/>
+        <TextView
+            android:id="@+id/send_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tem_wall_time"
+            android:layout_alignBottom="@id/tem_wall_time"
+            android:layout_marginBottom="25dp"
+            android:text="PolarBear"
+            />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
